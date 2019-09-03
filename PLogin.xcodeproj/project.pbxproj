@@ -14,6 +14,7 @@
 		4C5C8576231D03D500FC27ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C8574231D03D500FC27ED /* LaunchScreen.storyboard */; };
 		4C5C857E231D1E3D00FC27ED /* PTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C857D231D1E3D00FC27ED /* PTextField.swift */; };
 		4C5C8581231DF8F000FC27ED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C8580231DF8F000FC27ED /* UIView+Extension.swift */; };
+		4C5C8584231E09DA00FC27ED /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C8583231E09DA00FC27ED /* login.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4C5C8577231D03D500FC27ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C5C857D231D1E3D00FC27ED /* PTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTextField.swift; sourceTree = "<group>"; };
 		4C5C8580231DF8F000FC27ED /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4C5C8583231E09DA00FC27ED /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		4C5C856A231D03D300FC27ED /* PLogin */ = {
 			isa = PBXGroup;
 			children = (
+				4C5C8582231E098200FC27ED /* Describe */,
 				4C5C857F231DF8C400FC27ED /* Extension */,
 				4C5C856B231D03D300FC27ED /* AppDelegate.swift */,
 				4C5C856D231D03D300FC27ED /* ViewController.swift */,
@@ -76,6 +79,14 @@
 				4C5C8580231DF8F000FC27ED /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4C5C8582231E098200FC27ED /* Describe */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C8583231E09DA00FC27ED /* login.png */,
+			);
+			path = Describe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C5C8576231D03D500FC27ED /* LaunchScreen.storyboard in Resources */,
+				4C5C8584231E09DA00FC27ED /* login.png in Resources */,
 				4C5C8573231D03D500FC27ED /* Assets.xcassets in Resources */,
 				4C5C8571231D03D300FC27ED /* Main.storyboard in Resources */,
 			);
