@@ -81,6 +81,38 @@ class ViewController: UIViewController {
     //登录
     @objc func loginButtonClick(button:UIButton){
         print("登录")
+        realmTest()
+    }
+    
+    func realmTest(){
+        var dataArr = [Person]()
+        //增
+        for i in 1...10{
+            let person = Person()
+            person.id = i
+            person.name = "小夏\(i)"
+            person.age = 25 + i
+            dataArr.append(person)
+            //增
+//            RealmManager.shared.add(person)
+        }
+        
+        //查
+//        let result = RealmManager.shared.query(Person(), filter: "id=3")
+//        print("查：\(result)")
+        
+        //删除一条信息
+//        RealmManager.shared.delete(result.first)
+        
+        //删除整张表信息
+//        RealmManager.shared.deleteList(Person())
+        
+        //改
+        let person = Person()
+        person.id = 3
+        person.name = "小红"
+        person.age = 22
+        RealmManager.shared.update(person)
     }
 }
 

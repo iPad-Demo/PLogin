@@ -1,0 +1,6 @@
+framework module Pods_PLogin {
+  umbrella header "Pods-PLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
