@@ -13,11 +13,11 @@ import RealmSwift
 class RealmManager: NSObject {
     static let shared = RealmManager()
     fileprivate override init() {}
-    
+
     var realm: Realm{
         return try! Realm()
     }
-    
+
     //增
     func add <T> (_ model:T,_ id:String? = nil) {
         do {
@@ -26,7 +26,7 @@ class RealmManager: NSObject {
             }
         }catch{}
     }
-    
+
     //查
     func query <T> (_ model:T,filter:String? = nil) -> [T]{
         var result: Results<Object>
@@ -35,7 +35,7 @@ class RealmManager: NSObject {
         } else {
             result = realm.objects(T.self as! Object.Type)
         }
-        
+
         guard result.count > 0 else { return [] }
         var modelArr = [T]()
         for item in result{
@@ -59,7 +59,7 @@ class RealmManager: NSObject {
             }
         } catch {}
     }
-    
+
     //改
     func update <T> (_ model:T){
         do{

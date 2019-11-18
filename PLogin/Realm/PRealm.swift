@@ -29,16 +29,16 @@ class PRealm: NSObject {
             schemaVersion: 1,
             migrationBlock: { (migration, oldSchemaVersion) in
                 if oldSchemaVersion < 0 {
-                    
+
                 }
-                
+
         },
             deleteRealmIfMigrationNeeded: false,
             shouldCompactOnLaunch: nil, objectTypes: nil
         )
-        
+
         Realm.Configuration.defaultConfiguration = config
-        
+
         Realm.asyncOpen { (realm, error) in
             if let _ = realm {
                 print("Realm 服务器配置成功!")

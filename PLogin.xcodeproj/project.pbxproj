@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		4C5C857E231D1E3D00FC27ED /* PTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C857D231D1E3D00FC27ED /* PTextField.swift */; };
 		4C5C8581231DF8F000FC27ED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5C8580231DF8F000FC27ED /* UIView+Extension.swift */; };
 		4C5C8584231E09DA00FC27ED /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5C8583231E09DA00FC27ED /* login.png */; };
+		4CE1BF5723823C0C00D77D24 /* KeyBoderHandleTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE1BF5623823C0B00D77D24 /* KeyBoderHandleTool.swift */; };
 		4CED93EB2355C2220004E3C2 /* PRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CED93EA2355C2220004E3C2 /* PRealm.swift */; };
 		4CED93EE2355C67C0004E3C2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CED93ED2355C67C0004E3C2 /* Person.swift */; };
 		4CED93F02355C98C0004E3C2 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CED93EF2355C98C0004E3C2 /* RealmManager.swift */; };
@@ -32,6 +33,7 @@
 		4C5C857D231D1E3D00FC27ED /* PTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTextField.swift; sourceTree = "<group>"; };
 		4C5C8580231DF8F000FC27ED /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		4C5C8583231E09DA00FC27ED /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		4CE1BF5623823C0B00D77D24 /* KeyBoderHandleTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBoderHandleTool.swift; sourceTree = "<group>"; };
 		4CED93EA2355C2220004E3C2 /* PRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRealm.swift; sourceTree = "<group>"; };
 		4CED93ED2355C67C0004E3C2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4CED93EF2355C98C0004E3C2 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		4CED93EC2355C5690004E3C2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				4CE1BF5623823C0B00D77D24 /* KeyBoderHandleTool.swift */,
 				4CED93ED2355C67C0004E3C2 /* Person.swift */,
 				4CED93EF2355C98C0004E3C2 /* RealmManager.swift */,
 			);
@@ -149,7 +152,7 @@
 				4C5C8564231D03D300FC27ED /* Sources */,
 				4C5C8565231D03D300FC27ED /* Frameworks */,
 				4C5C8566231D03D300FC27ED /* Resources */,
-				B03998E536D9432F5B0E7F25 /* [CP] Embed Pods Frameworks */,
+				B6781F8646756E41839AC208 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,7 +211,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B03998E536D9432F5B0E7F25 /* [CP] Embed Pods Frameworks */ = {
+		B6781F8646756E41839AC208 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,6 +259,7 @@
 			files = (
 				4CED93EE2355C67C0004E3C2 /* Person.swift in Sources */,
 				4C5C856E231D03D300FC27ED /* ViewController.swift in Sources */,
+				4CE1BF5723823C0C00D77D24 /* KeyBoderHandleTool.swift in Sources */,
 				4C5C857E231D1E3D00FC27ED /* PTextField.swift in Sources */,
 				4CED93EB2355C2220004E3C2 /* PRealm.swift in Sources */,
 				4C5C8581231DF8F000FC27ED /* UIView+Extension.swift in Sources */,
@@ -408,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3YTA8VEEK;
 				INFOPLIST_FILE = PLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3YTA8VEEK;
 				INFOPLIST_FILE = PLogin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (

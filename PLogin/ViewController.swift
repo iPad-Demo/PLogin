@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.red
         
-        loginBackView = UIView(frame: CGRect(x: 0, y: 0, width: 500, height: 400))
+        loginBackView = UIView(frame: CGRect(x: 0, y: 0, width: 500, height:self.view.frame.size.height - 400))
         loginBackView?.center = self.view.center
 //        loginBackView?.backgroundColor = UIColor.lightGray
         self.view.addSubview(loginBackView)
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         loginButton.layer.cornerRadius = 25
         loginButton.addTarget(self, action: #selector(loginButtonClick(button:)), for: .touchUpInside)
         loginBackView.addSubview(loginButton)
-        
+        KeyBoderHandleTool.getSharedKeyBoderTool().handleKeyBoderAction(handleView: loginBackView, offsetY: nil)
         
     }
     
@@ -81,9 +81,12 @@ class ViewController: UIViewController {
     //登录
     @objc func loginButtonClick(button:UIButton){
         print("登录")
-        realmTest()
+//        realmTest()
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
     func realmTest(){
         var dataArr = [Person]()
         //增
@@ -114,5 +117,6 @@ class ViewController: UIViewController {
         person.age = 22
         RealmManager.shared.update(person)
     }
+ 
 }
 
